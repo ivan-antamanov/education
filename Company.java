@@ -31,6 +31,10 @@ public class Company
             System.out.println("Add new employee #3: "+employee3.name+" as "+employee3.designation+". Salary: "+employee3.salary);
 
         }
+        public void evalMsal()
+        {
+            
+        };
         public static void main(String args[]){
             Company org = new Company("British Petrolium", 100000);
             Employee victor = new Employee("Victor","Surskov",28,"man");
