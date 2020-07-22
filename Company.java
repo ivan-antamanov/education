@@ -31,22 +31,25 @@ public class Company
             System.out.println("Add new employee #3: "+employee3.name+" as "+employee3.designation+". Salary: "+employee3.salary);
 
         }
-        public void evalMsal()
+        public double evalMsal()
         {
-            
+          msal=(employee1.salary+employee2.salary+employee3.salary)/3;
+          System.out.println("Middle salary in Company is "+msal+" $");
+          return msal;
         };
         public static void main(String args[]){
             Company org = new Company("British Petrolium", 100000);
             Employee victor = new Employee("Victor","Surskov",28,"man");
             Employee ivan = new Employee ("Ivan","Antamanov",27,"man");
             Employee jamal = new Employee ("Jamal",null,21,"man");
-            victor.setDesignation("Newbee");
+            victor.setDesignation("Newbie");
             victor.setSalary(1000);
             ivan.setWorkplace(5000,"Coder-Shmoder");
             jamal.setWorkplace(50000,"Hach-Trukach");
             org.setEmployee1(victor);
             org.setEmployee2(ivan);
             org.setEmployee3(jamal);
+            org.evalMsal();
         }
 
 
