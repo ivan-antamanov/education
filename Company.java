@@ -31,7 +31,7 @@ public class Company
             System.out.println("Add new employee #3: "+employee3.name+" as "+employee3.designation+". Salary: "+employee3.salary);
 
         }
-        public double evalMsal()
+        pub`lic double evalMsal()
         {
           msal=(employee1.salary+employee2.salary+employee3.salary)/3;
           System.out.println("Middle salary in Company is "+msal+" $");
